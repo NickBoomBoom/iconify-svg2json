@@ -63,12 +63,12 @@ import { parseColors, isEmptyColor } from "@iconify/tools/lib/colors/parse";
     // 6. 准备导出数据
     const exportData = iconSet.export();
     
-    // 添加元数据 (可选)
-    exportData.info = {
-      author: "Your Name",
-      license: "MIT",
-      version: "1.0.0",
-    };
+    //TODO: 添加元数据 (可选)
+    // exportData.info = {
+    //   author: "Your Name",
+    //   license: "MIT",
+    //   version: "1.0.0",
+    // };
 
     // 7. 生成格式化JSON
     const jsonOutput = JSON.stringify(exportData, null, 2) + "\n";
